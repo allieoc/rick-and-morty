@@ -1,0 +1,32 @@
+.episodes-container{
+    min-height: 100vh;
+    padding: 25px;
+    display: flex;
+}
+
+.episodes-dark{
+    background-color: black;
+    color:white;
+ }
+
+.character-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+#select-episode{
+    border:solid 2px var(--primary-bg);
+    border-radius:5px;
+    padding:8px 16px;
+}
+.episode-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.episodes-container form{
+    padding:0 25px;
+}
