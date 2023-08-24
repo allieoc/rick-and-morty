@@ -8,3 +8,8 @@
 .about-container p{
     padding: 20px;
 }
+
+.about-dark{
+    background-color: black;
+    color:white;
+}

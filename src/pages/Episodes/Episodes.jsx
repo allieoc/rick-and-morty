@@ -1,9 +1,16 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useContext} from 'react'
 import "./Episodes.css"
 import axios from 'axios'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
+import { ThemeContext } from '../../contexts/ThemeContext'
 
 function Episodes() {
+
+   //change to use global state
+    //NOTE {} NOT []
+    const {darkMode, setDarkMode} = useContext(ThemeContext)
+
+
   //when the user selects an episode, this
   //page shows the characters from
   //that episode
@@ -91,7 +98,7 @@ const fetchEpisodeData = async () =>{
 }
 
   return (
-    <div className="episodes-container">
+    <div className={darkMode?"episodes-container episodes-dark":"episodes-container"}>
       <div>
         <label htmlFor='select-episode'>Select an episode</label>
         <select id='select-episode' onChange={handleSelectChange}>

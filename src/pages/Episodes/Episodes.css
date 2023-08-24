@@ -20,7 +20,9 @@
     border:solid 2px var(--primary-bg);
     border-radius:5px;
     padding:8px 16px;
+    margin-right: 30px;
 }
+
 .episode-info{
     display: flex;
     flex-direction: column;
